@@ -1,0 +1,24 @@
+{
+    "ignorePaths": ["go.mod", "go.sum"],
+    "language": "en,pt-br",
+    "words": [
+        "borderless_maximize",
+        "CanChangeAccels",
+        "cycle_tabwin_mode",
+        "dpms",
+        "fullscreen",
+        "github",
+        "horiz_scroll_opacity",
+        "ldflags",
+        "logind",
+        "mousewheel_rollup",
+        "notifyd",
+        "Numlock",
+        "TitlebarMiddleClick",
+        "titleless_maximize",
+        "unredirect_overlays",
+        "xfconf",
+        "xfhelp",
+        "xsettings"
+    ]
+}
