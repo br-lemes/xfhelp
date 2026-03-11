@@ -2,8 +2,11 @@
     "ignorePaths": ["go.mod", "go.sum"],
     "language": "en,pt-br",
     "words": [
+        "autohide-behavior",
+        "background-rgba",
         "borderless_maximize",
         "CanChangeAccels",
+        "clipman",
         "cycle_tabwin_mode",
         "dpms",
         "fullscreen",

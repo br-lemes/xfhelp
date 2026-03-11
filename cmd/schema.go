@@ -87,6 +87,14 @@ var exportSchema = SchemaSpec{
 		"/plugin/hide-on-read":      {Type: TypeBool},
 		"/show-notifications-on":    {Type: TypeString},
 	},
+	"xfce4-panel": {
+		"/panels/dark-mode": {Type: TypeBool},
+		"/plugins/clipman/settings/add-primary-clipboard": {Type: TypeBool},
+		"/plugins/clipman/settings/show-qr-code":          {Type: TypeBool},
+		"/plugins/clipman/tweaks/max-menu-items":          {Type: TypeInt},
+		"/plugins/clipman/tweaks/paste-on-activate":       {Type: TypeInt},
+		"/plugins/clipman/tweaks/popup-at-pointer":        {Type: TypeBool},
+	},
 	"xfce4-power-manager": {
 		"/xfce4-power-manager/battery-button-action":       {Type: TypeInt},
 		"/xfce4-power-manager/brightness-level-on-ac":      {Type: TypeInt},
@@ -115,6 +123,7 @@ var exportSchema = SchemaSpec{
 		"/xfce4-power-manager/lock-screen-suspend-hibernate": {Type: TypeBool},
 		"/xfce4-power-manager/logind-handle-lid-switch":      {Type: TypeBool},
 		"/xfce4-power-manager/power-button-action":           {Type: TypeInt},
+		"/xfce4-power-manager/presentation-mode":             {Type: TypeBool},
 		"/xfce4-power-manager/show-panel-label":              {Type: TypeInt},
 		"/xfce4-power-manager/show-presentation-indicator":   {Type: TypeBool},
 		"/xfce4-power-manager/show-tray-icon":                {Type: TypeBool},
