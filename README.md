@@ -52,6 +52,16 @@ xfhelp import settings.json
 xfhelp import --dry-run settings.json  # show pending changes without applying
 ```
 
+### outputs
+
+Lists available XFCE display outputs (monitors, screens). Shows both
+default options ("Automatic", "Primary") and currently active display
+devices detected by XFCE.
+
+```sh
+xfhelp outputs
+```
+
 ### schema
 
 Prints the JSON Schema of all supported channels and properties. Useful
