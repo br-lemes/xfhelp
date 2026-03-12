@@ -62,6 +62,14 @@ devices detected by XFCE.
 xfhelp outputs
 ```
 
+### panel list
+
+List all XFCE panels with their IDs and output names.
+
+```sh
+xfhelp panel list
+```
+
 ### schema
 
 Prints the JSON Schema of all supported channels and properties. Useful

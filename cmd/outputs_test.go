@@ -38,7 +38,10 @@ func TestGetOutputs_AlwaysIncludesAutomaticAndPrimary(t *testing.T) {
 	got, err := getOutputs(fakeQuery(""), "Default")
 	assertNoError(t, err)
 	if len(got) < 2 || got[0] != "Automatic" || got[1] != "Primary" {
-		t.Errorf("expected first two outputs to be Automatic and Primary, got %v", got)
+		t.Errorf(
+			"expected first two outputs to be Automatic and Primary, got %v",
+			got,
+		)
 	}
 }
 
