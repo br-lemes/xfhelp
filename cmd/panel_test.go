@@ -118,3 +118,15 @@ func TestGetPanels_QueryError(t *testing.T) {
 	})
 	assertError(t, err)
 }
+
+func TestSetPanelOutput_InvalidPanelID(t *testing.T) {
+	err := setPanelOutput(fakeQuery(""), 999, "Primary")
+	assertError(t, err)
+}
+
+func TestSetPanelOutput_Success(t *testing.T) {
+	err := setPanelOutput(
+		fakeQuery("/panels/panel-1/output-name  Primary"), 1, "HDMI2",
+	)
+	assertNoError(t, err)
+}

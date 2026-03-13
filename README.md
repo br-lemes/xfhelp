@@ -70,6 +70,23 @@ List all XFCE panels with their IDs and output names.
 xfhelp panel list
 ```
 
+### panel hide
+
+Hide XFCE panel by setting fictitious output name.
+
+```sh
+xfhelp panel hide [panel-id]
+```
+
+### panel show
+
+Show XFCE panel on specified output. The output name must be valid
+and available in the current XFCE display configuration.
+
+```sh
+xfhelp panel show [panel-id] [output-name]
+```
+
 ### schema
 
 Prints the JSON Schema of all supported channels and properties. Useful

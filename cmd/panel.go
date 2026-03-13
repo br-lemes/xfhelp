@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -64,6 +65,23 @@ func getPanels(queryFunc queryFunc) (PanelSpec, error) {
 	}
 	return props, nil
 }
+
+func setPanelOutput(queryFunc queryFunc, panelID int, outputName string) error {
+	panels, err := getPanels(queryFunc)
+	if err != nil {
+		return err
+	}
+	if _, exists := panels[panelID]; !exists {
+		return fmt.Errorf("panel %d does not exist", panelID)
+	}
+	panelPath := fmt.Sprintf("/panels/panel-%d/output-name", panelID)
+	_, err = queryFunc("-c", "xfce4-panel", "-p", panelPath, "-s", outputName)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 func init() {
 	rootCmd.AddCommand(panelCmd)
 }
