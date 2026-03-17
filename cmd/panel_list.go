@@ -2,6 +2,8 @@ package cmd
 
 import (
 	"fmt"
+	"maps"
+	"slices"
 
 	"github.com/spf13/cobra"
 )
@@ -14,8 +16,11 @@ var panelListCmd = &cobra.Command{
 		if err != nil {
 			return err
 		}
-		for id, panel := range panels {
-			fmt.Printf("Panel %d: %s\n", id, panel["output-name"])
+
+		ids := slices.Collect(maps.Keys(panels))
+		slices.Sort(ids)
+		for _, id := range ids {
+			fmt.Printf("Panel %d: %s\n", id, panels[id])
 		}
 		return nil
 	},
