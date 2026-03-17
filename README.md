@@ -87,6 +87,14 @@ and available in the current XFCE display configuration.
 xfhelp panel show [panel-id] [output-name]
 ```
 
+### panel schema
+
+Prints the JSON Schema for XFCE panel and plugin configurations.
+
+```sh
+xfhelp panel schema
+```
+
 ### schema
 
 Prints the JSON Schema of all supported channels and properties. Useful
