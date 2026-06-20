@@ -5,14 +5,12 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/br-lemes/xfhelp/internal/version"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:     "xfhelp",
-	Short:   "A CLI tool for helping with XFCE configuration",
-	Version: version.GetVersion(),
+	Use:   "xfhelp",
+	Short: "A CLI tool for helping with XFCE configuration",
 }
 
 type queryFunc func(args ...string) ([]byte, error)
@@ -27,6 +25,7 @@ func realFunc(args ...string) ([]byte, error) {
 	return output, nil
 }
 
-func Execute() error {
+func Execute(version string) error {
+	rootCmd.Version = version
 	return rootCmd.Execute()
 }

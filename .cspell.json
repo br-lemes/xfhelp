@@ -1,6 +1,6 @@
 {
-    "ignorePaths": ["go.mod", "go.sum"],
-    "language": "en,pt-br",
+    "ignorePaths": ["*.json", "go.mod", "go.sum"],
+    "language": "en",
     "words": [
         "autohide-behavior",
         "background-rgba",
@@ -11,8 +11,11 @@
         "dpms",
         "fullscreen",
         "github",
+        "GOARCH",
         "horiz_scroll_opacity",
         "ldflags",
+        "lemes",
+        "linux",
         "lockscreen",
         "logind",
         "logoutuser",
