@@ -1,2 +1,4 @@
 *.json
 /xfhelp
+/xfhelp-linux-amd64
+/xfhelp-linux-arm64
